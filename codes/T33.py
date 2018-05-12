@@ -15,7 +15,7 @@
 # 需要找到一个分割点，将前面的节点分为其左右子树。
 # 对于每一个根节点，需要作上述判断，找到左右子树，然后递归。
 
-def printSearchTreeBack(A):
+def judgeSearchTreeBack(A):
     if(len(A) == 0):    return False
     return judge(A, 0, len(A) - 1)
 
@@ -23,13 +23,27 @@ def judge(A, start, end):
     if(start == end):   return True
     
     root = A[end]
-    for i in range(start, end):
+    #找到左右子树
+    for i in range(start, end + 1): #这里是为了让全部为左子树的特殊情况，满足下面root的判断。
         if(A[i] > root):
             break
     
-    #判断
-    for j in range(i , end):
+    #判断右子树是否有小于root的值
+    for j in range(i, end):
         if(A[j] < root):
             return False
     
-    return judge(A, start, i - 1) and judge(A, i, end - 1)
+    left, right = True, True
+    if(i > start):
+        left = judge(A, start, i - 1)
+    if(end > i):
+        right = judge(A, i, end - 1)
+
+    return left and right
+
+if __name__ == "__main__":
+    testCase = [[5, 7, 6, 9, 11, 10, 8],
+                [7, 4, 6, 5],
+                [2, 3, 4, 6]]
+    
+    print(list(map(judgeSearchTreeBack, testCase)))
