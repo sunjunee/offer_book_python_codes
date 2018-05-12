@@ -17,11 +17,19 @@
 
 def printSearchTreeBack(A):
     if(len(A) == 0):    return False
-    
+    return judge(A, 0, len(A) - 1)
 
 def judge(A, start, end):
     if(start == end):   return True
     
     root = A[end]
     for i in range(start, end):
-        
+        if(A[i] > root):
+            break
+    
+    #判断
+    for j in range(i , end):
+        if(A[j] < root):
+            return False
+    
+    return judge(A, start, i - 1) and judge(A, i, end - 1)
