@@ -40,6 +40,9 @@ def copyLinkList(p):
     while(p1 != None):
         p1.next = p1.next.next
         p2.next = p2.next.next
+        p1 = p1.next
+        p2 = p2.next
     
     return newStart
-        
+
+#没法测试啊。。。。
