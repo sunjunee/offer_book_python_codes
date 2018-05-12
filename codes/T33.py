@@ -44,6 +44,7 @@ def judge(A, start, end):
 if __name__ == "__main__":
     testCase = [[5, 7, 6, 9, 11, 10, 8],
                 [7, 4, 6, 5],
-                [2, 3, 4, 6]]
+                [2, 3, 4, 6],
+                [6, 5, 4, 3]]
     
     print(list(map(judgeSearchTreeBack, testCase)))
