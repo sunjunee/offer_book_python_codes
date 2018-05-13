@@ -16,7 +16,7 @@ def tranSearchTreeToLinkList(p):
     lastNode = [None]
     trans(p, lastNode)
     
-    s = lastNode
+    s = lastNode[0]
     while(s.left):
         s = s.left
 
