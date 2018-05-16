@@ -22,6 +22,19 @@ def getNumOfDigitOne(num):
         else:
             return 1
     
-        
-            
+    strs = str(num)[1:].lstrip("0")
+    preNum = 0 if strs == '' else eval(strs)
+    
+    #计算preNum + 1到Num
+    high = int(str(num)[0])
+    digitNum = len(str(num)) - 1
+    
+    if(high == 1):
+        now = preNum + 1 + high * digitNum * (10 ** (digitNum - 1))
+    else:
+        now = 10 ** digitNum + high * digitNum * (10 ** (digitNum - 1))
+
+    return now + getNumOfDigitOne(preNum)
+    
+print(getNumOfDigitOne(21345))            
     
