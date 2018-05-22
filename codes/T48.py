@@ -16,13 +16,23 @@ def getLongestSubStr(strs):
     dicts = [0 for i in range(26)]
     maxLens = 1
     while(j < lens):
-        c = ord(strs[j]) - ord("a")
-        if(not dicts[c]):
-            if(j - i > maxLens):
-                maxLens = j - i
-            i = i + 1
-        j = j + 1
+        c = getIndex(strs[j])
+        if(dicts[c]):
+            while(strs[i] != strs[j]):
+                dicts[getIndex(strs[i])] = 0
+                i += 1
+            dicts[getIndex(strs[i])] = 0
+            i += 1
+        
+        if(j - i + 1 > maxLens):
+            maxLens = j - i + 1        
+        j += 1
         dicts[c] = 1
-            
-    
-    
+
+    return maxLens
+
+def getIndex(s):
+    return ord(s) - ord("a")
+
+if __name__ == "__main__":
+    print(getLongestSubStr("arabcacfr"))
