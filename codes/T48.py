@@ -10,6 +10,8 @@
 # 计算该最长子字符串的长度。假设字符串中只包含a-z的字符。
 # 例如：arabcacfr中最长的不含重复字符的子字符串是acfr，长度为4
 
+# 类似动态规划的思想，如果下一个值在当前的子串中，则修改子串；
+# 否则子串长度加一。继续考虑下一个值 
 def getLongestSubStr(strs):
     lens = len(strs)
     i, j = 0, 0
@@ -26,8 +28,9 @@ def getLongestSubStr(strs):
         
         if(j - i + 1 > maxLens):
             maxLens = j - i + 1        
-        j += 1
         dicts[c] = 1
+        j += 1
+        
 
     return maxLens
 
@@ -35,4 +38,4 @@ def getIndex(s):
     return ord(s) - ord("a")
 
 if __name__ == "__main__":
-    print(getLongestSubStr("arabcacfr"))
+    print(getLongestSubStr("ab"))
