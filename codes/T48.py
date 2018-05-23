@@ -12,6 +12,7 @@
 
 # 类似动态规划的思想，如果下一个值在当前的子串中，则修改子串；
 # 否则子串长度加一。继续考虑下一个值 
+
 def getLongestSubStr(strs):
     lens = len(strs)
     i, j = 0, 0
@@ -37,5 +38,30 @@ def getLongestSubStr(strs):
 def getIndex(s):
     return ord(s) - ord("a")
 
+# 更佳解法：
+# 考虑以某个字符结尾的子串长度，对于某字符，
+# 记录之前每一个字符的最新出现的位置，如果
+# 当前字符没有出现过，则子串加一；如果出现过，
+# 则考虑其位置，如果在子串开头之前，则子串加一
+# 否则子串从与其重复的字符的位置的后一个位置
+# 开始。
+
+def getMaxSubLen(strs):
+    lens = len(strs)
+    posDicts = {}
+    
+    i, maxLen = 0, 0
+    for j in range(lens):
+        if(strs[j] in posDicts.keys()):
+            pos = posDicts[strs[j]]
+            if(pos >= i):
+                i = pos + 1
+                continue
+        posDicts[strs[j]] = j
+        
+        if(j - i + 1 > maxLen):
+            maxLen = j - i + 1
+    return maxLen
+        
 if __name__ == "__main__":
-    print(getLongestSubStr("ab"))
+    print(getMaxSubLen("abccafd"))
