@@ -17,10 +17,10 @@
 # 可以用三个队列来存。
 
 def getUglyNum(index):
-    if(index < 0):  return None
+    if(index <= 0):  return None
 
     uglyNums = [1]
-    p2, p3, p5 = 0
+    p2, p3, p5 = 0, 0, 0
     while(len(uglyNums) < index):
         minNum = min([uglyNums[p2] * 2, uglyNums[p3] * 3, uglyNums[p5] * 5])
         uglyNums.append(minNum)
@@ -31,4 +31,6 @@ def getUglyNum(index):
         while(uglyNums[p5] * 5 <= minNum):
             p5 += 1
     
-    return minNum
+    return uglyNums[-1]
+
+print(getUglyNum(1500))
