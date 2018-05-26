@@ -56,12 +56,13 @@ def getMaxSubLen(strs):
             pos = posDicts[strs[j]]
             if(pos >= i):
                 i = pos + 1
-                continue
+#                continue
         posDicts[strs[j]] = j
         
         if(j - i + 1 > maxLen):
             maxLen = j - i + 1
+        print(i, j)
     return maxLen
         
 if __name__ == "__main__":
-    print(getMaxSubLen("abccafd"))
+    print(getMaxSubLen("arabcacfr"))

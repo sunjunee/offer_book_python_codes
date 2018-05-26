@@ -28,7 +28,7 @@ def FindPos(sortedNums, num):
     
     start, end = 0, lens - 1
     while(end - start > 1):
-        center = int((end - start) / 2)
+        center = int((end + start) / 2)
         if(sortedNums[center] == num):
             return center + 1
         elif(sortedNums[center] < num):
@@ -44,4 +44,4 @@ def FindPos(sortedNums, num):
         return end + 1
              
 if __name__ == "__main__":
-    print(getReversePairs([1,0,-1,0]))
+    print(getReversePairs([1, 0, -1, 0, -2, 8]))
