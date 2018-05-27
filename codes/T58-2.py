@@ -12,4 +12,6 @@
 # 两位得到的结果"cdefgab"
 
 def rotateStrs(strs, index):
-    
+    return strs[index:] + strs[0:index]
+
+print(rotateStrs("abcdefg", 2))
