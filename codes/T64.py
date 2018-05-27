@@ -9,4 +9,12 @@
 # 求1到n的和，要求不适用乘除法、for、while
 # if、else、switch、case等关键词及条件判断
 # 语句(A?B:C)
- 
+
+n = 1
+s = 0
+class Accuramuate():
+    def __init__(self):
+        Accuramuate()
+        global s, n        
+        s += n
+        n += 1
