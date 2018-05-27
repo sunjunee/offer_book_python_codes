@@ -10,13 +10,20 @@
 
 # 感觉就是中序遍历的修改版本
 
-def getKthLargeInTree(root, k):
-    nums = []
-    search(root, nums)
-    return nums[k - 1]
+def getKthLargeInTree(root, k): 
+    return search(root, k)
     
-def search(p, nums):
-    if(p.left):     search(p.left, nums)
-    nums.append(p.x)
-    if(p.right):    search(p.right, nums)
-
+def search(p, k):
+    target = None
+    if(p.right):     
+        target, k = search(p.right, k)
+        
+    if(target == None):
+        if(k == 1):
+            target = p
+        k -= 1
+    
+    if(target == None and p.left != None):    
+        target, k = search(p.left, k)
+    
+    return target, k
