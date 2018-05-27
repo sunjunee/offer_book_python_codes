@@ -14,7 +14,6 @@ n = 1
 s = 0
 class Accuramuate():
     def __init__(self):
-        Accuramuate()
         global s, n        
         s += n
         n += 1
