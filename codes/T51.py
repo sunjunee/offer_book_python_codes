@@ -30,7 +30,11 @@ def FindPos(sortedNums, num):
     while(end - start > 1):
         center = int((end + start) / 2)
         if(sortedNums[center] == num):
-            return center + 1
+            #如果相等，则找最右边相等的位置
+            c = center
+            while(sortedNums[c] == num):
+                c += 1
+            return c
         elif(sortedNums[center] < num):
             start = center
         else:
@@ -42,6 +46,38 @@ def FindPos(sortedNums, num):
         return start + 1
     else:
         return end + 1
-             
+
+################# 书上解法 ##################
+# 使用归并排序的思想，将数组二分，然后计算前一部分
+# 与后一部分之间的逆序对数目
+def getReversePairs_1(nums):
+    return mergeSort(nums, 0, len(nums) - 1)
+
+def mergeSort(nums, start, end):
+    if(start == end):
+        return 0
+    
+    pairs = 0
+    center = int((start + end) / 2)
+    pairs += mergeSort(nums, start, center)
+    pairs += mergeSort(nums, center + 1, end)
+    
+    newNums = []
+    i, j = start, center + 1
+    while(i <= center and j <= end):
+        if(nums[i] > nums[j]):
+            newNums.append(nums[j])
+            pairs += (center - i + 1)
+            j += 1
+        else:
+            newNums.append(nums[i])
+            i += 1
+    if(i > center):
+        newNums.extend(nums[j:end+1])
+    else:
+        newNums.extend(nums[i:center+1])
+    nums[start : end + 1] = newNums
+    return pairs
+
 if __name__ == "__main__":
-    print(getReversePairs([1, 0, -1, 0, -2, 8]))
+    print(getReversePairs_1([7,5,5,5,5,6,4, 3]))

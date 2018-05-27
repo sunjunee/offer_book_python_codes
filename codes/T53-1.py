@@ -48,4 +48,4 @@ def FindPos(sortedNums, num):
         return end + 1
 
 if __name__ == "__main__":
-    print(getTimesOfNum([1, 2, 3, 3, 3, 3, 4, 5], 5))
+    print(getTimesOfNum([1, 2, 3, 3, 3, 3, 4, 5], 4))
