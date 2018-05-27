@@ -12,8 +12,10 @@
 
 def getSum(A, B):
     
-    while(True):
+    while(B):
         s = A ^ B
         c = (A & B) << 1
         A, B = s, c
+        
+    return A
         
