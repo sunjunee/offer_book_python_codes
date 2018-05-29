@@ -1,8 +1,47 @@
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T1.py"> 面试题1：赋值运算符函数</a>
 
- 题目：如下为类型CMyString的声明，请为该类型添加赋值运算符函数。
+#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T4.py"> 面试题4：二维数组中的查找</a>
+
+ 题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按
+
+ 照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个
+
+ 整数，判断数组中是否含有该整数。
+ 
+#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T5.py"> 面试题5：替换空格</a>
+
+ 题目：请实现一个函数，把字符串中的每个空格替换成"%20"。例如输入“We are happy.”，
+
+ 则输出“We%20are%20happy.”。
+ 
+
+ #### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T6.py"> 面试题6：从尾到头打印链表</a>
+
+ 题目：输入一个链表的头结点，从尾到头反过来打印出每个结点的值。
+ 
+
+#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T7.py"> 面试题7：重建二叉树</a>
+
+ 题目：输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输
+
+ 入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,
+
+ 2, 4, 7, 3, 5, 6, 8}和中序遍历序列{4, 7, 2, 1, 5, 3, 8, 6}，则重建出
+
+ 图2.6所示的二叉树并输出它的头结点。
 
 
+#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T8.py"> 面试题8：二叉树的下一个结点</a>
+
+ 题目：给定一棵二叉树和其中的一个结点，如何找出中序遍历顺序的下一个结点？
+
+ 树中的结点除了有两个分别指向左右子结点的指针以外，还有一个指向父结点的指针。
+
+#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T9.py"> 面试题9：用两个栈实现队列</a>
+
+ 题目：用两个栈实现一个队列。队列的声明如下，请实现它的两个函数appendTail
+
+ 和deleteHead，分别完成在队列尾部插入结点和在队列头部删除结点的功能。
+ 
 #### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T10.py"> 面试题10：斐波那契数列</a>
 
  题目：写一个函数，输入n，求斐波那契（Fibonacci）数列的第n项。
@@ -81,14 +120,14 @@
  打印出1、2、3一直到最大的3位数即999。
 
 
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T18-1.py"> 面试题18（一）：在O(1)时间删除链表结点</a>
+#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T18.py"> 面试题18（一）：在O(1)时间删除链表结点</a>
 
  题目：给定单向链表的头指针和一个结点指针，定义一个函数在O(1)时间删除该
 
  结点。
 
 
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T18-2.py"> 面试题18（二）：删除链表中重复的结点</a>
+#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T18-1.py"> 面试题18（二）：删除链表中重复的结点</a>
 
  题目：在一个排序的链表中，如何删除重复的结点？例如，在图3.4（a）中重复
 
@@ -184,15 +223,20 @@
 
  4、3、5、1、2就不可能是该压栈序列的弹出序列。
 
+ 
+#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T32.py"> 面试题32（一）：分行从上到下打印二叉树</a>
 
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T32-2.py"> 面试题32（二）：分行从上到下打印二叉树</a>
+ 题目：从上往下打印出二叉树的每个结点，同一层的结点按照从左到右的顺序打印。
+ 
+ 
+#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T32-1.py"> 面试题32（二）：分行从上到下打印二叉树</a>
 
  题目：从上到下按层打印二叉树，同一层的结点按从左到右的顺序打印，每一层
 
  打印到一行。
 
 
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T32-3.py"> 面试题32（三）：之字形打印二叉树</a>
+#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T32-2.py"> 面试题32（三）：之字形打印二叉树</a>
 
  题目：请实现一个函数按照之字形顺序打印二叉树，即第一行按照从左到右的顺
 
@@ -252,13 +296,7 @@
  出现了5次，超过数组长度的一半，因此输出2。
 
 
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T4.py"> 面试题4：二维数组中的查找</a>
 
- 题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按
-
- 照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个
-
- 整数，判断数组中是否含有该整数。
 
 
 #### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T40.py"> 面试题40：最小的k个数</a>
@@ -347,27 +385,12 @@
  习惯上我们把1当做第一个丑数。
 
 
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T5.py"> 面试题5：替换空格</a>
 
- 题目：请实现一个函数，把字符串中的每个空格替换成"%20"。例如输入“We are happy.”，
-
- 则输出“We%20are%20happy.”。
-
-
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T50-1.py"> 面试题50（一）：字符串中第一个只出现一次的字符</a>
+#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T50.py"> 面试题50（一）：字符串中第一个只出现一次的字符</a>
 
  题目：在字符串中找出第一个只出现一次的字符。如输入"abaccdeff"，则输出
 
  'b'。
-
-
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T50-2.py"> 面试题50（二）：字符流中第一个只出现一次的字符</a>
-
- 题目：请实现一个函数用来找出字符流中第一个只出现一次的字符。例如，当从
-
- 字符流中只读出前两个字符"go"时，第一个只出现一次的字符是'g'。当从该字
-
- 符流中读出前六个字符"google"时，第一个只出现一次的字符是'l'。
 
 
 #### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T51.py"> 面试题51：数组中的逆序对</a>
@@ -412,7 +435,7 @@
  题目：给定一棵二叉搜索树，请找出其中的第k大的结点。
 
 
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T55-1.py"> 面试题55（一）：二叉树的深度</a>
+#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T55.py"> 面试题55（一）：二叉树的深度</a>
 
  题目：输入一棵二叉树的根结点，求该树的深度。从根结点到叶结点依次经过的
 
@@ -474,7 +497,7 @@
  字2，该函数将返回左旋转2位得到的结果"cdefgab"。
 
 
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T59-1.py"> 面试题59（一）：滑动窗口的最大值</a>
+#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T59.py"> 面试题59（一）：滑动窗口的最大值</a>
 
  题目：给定一个数组和滑动窗口的大小，请找出所有滑动窗口里的最大值。例如，
 
@@ -491,10 +514,6 @@
 
  滑动窗口，它们的最大值分别为{4, 4, 6, 6, 6, 5}，
 
-
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T6.py"> 面试题6：从尾到头打印链表</a>
-
- 题目：输入一个链表的头结点，从尾到头反过来打印出每个结点的值。
 
 
 #### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T60.py"> 面试题60：n个骰子的点数</a>
@@ -548,42 +567,5 @@
  题目：给定一个数组A[0, 1, …, n-1]，请构建一个数组B[0, 1, …, n-1]，其
 
  中B中的元素B[i] =A[0]×A[1]×… ×A[i-1]×A[i+1]×…×A[n-1]。不能使用除法。
-
-
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T67.py"> 面试题67：把字符串转换成整数</a>
-
- 题目：请你写一个函数StrToInt，实现把字符串转换成整数这个功能。当然，不
-
- 能使用atoi或者其他类似的库函数。
-
-
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T68.py"> 面试题68：树中两个结点的最低公共祖先</a>
-
- 题目：输入两个树结点，求它们的最低公共祖先。
-
-
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T7.py"> 面试题7：重建二叉树</a>
-
- 题目：输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输
-
- 入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,
-
- 2, 4, 7, 3, 5, 6, 8}和中序遍历序列{4, 7, 2, 1, 5, 3, 8, 6}，则重建出
-
- 图2.6所示的二叉树并输出它的头结点。
-
-
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T8.py"> 面试题8：二叉树的下一个结点</a>
-
- 题目：给定一棵二叉树和其中的一个结点，如何找出中序遍历顺序的下一个结点？
-
- 树中的结点除了有两个分别指向左右子结点的指针以外，还有一个指向父结点的指针。
-
-
-#### <a href = "https://github.com/sunjunee/offer_book_python_codes/blob/master/codes/T9.py"> 面试题9：用两个栈实现队列</a>
-
- 题目：用两个栈实现一个队列。队列的声明如下，请实现它的两个函数appendTail
-
- 和deleteHead，分别完成在队列尾部插入结点和在队列头部删除结点的功能。
 
 
