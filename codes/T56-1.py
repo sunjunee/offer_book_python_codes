@@ -22,7 +22,9 @@
 def getNumAppOnce(nums):
     tem = XOR(nums)
     i = bin(tem)[2:].index('1')     #找到一个不为0的位
-    tem = int('1' + '0' * (i - 1) if i > 0 else '1', 2)
+    i = len(bin(tem)[2:]) - i - 1
+    tem = int('1' + '0' * i if i > 0 else '1', 2)
+    print(len(bin(tem)) - 2, tem)
     
     nums1, nums2 = [], []
     
@@ -40,4 +42,4 @@ def XOR(nums):
         resu ^= num
     return resu
 
-print(getNumAppOnce([1,1,2,2,3,4,5,6,5,6]))
+print(getNumAppOnce([1,1,2,2,3,3,10,5,5,9]))

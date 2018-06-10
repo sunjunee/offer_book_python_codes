@@ -80,4 +80,4 @@ def mergeSort(nums, start, end):
     return pairs
 
 if __name__ == "__main__":
-    print(getReversePairs_1([7,5,5,5,5,6,4, 3]))
+    print(getReversePairs_1(list(range(100000, -1, -1))))
